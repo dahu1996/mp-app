@@ -1,5 +1,5 @@
-<scroll-view class="full" scroll-y>
-  <view class="box">A</view>
-  <view class="box">B</view>
-  <view class="box">C</view>
-</scroll-view>
+<view class="full">
+  <button type="primary" size="mini">Button</button>
+  <button type="warn" size="mini">Button</button>
+  <button type="warn" size="mini" plain>Button</button>
+</view>
