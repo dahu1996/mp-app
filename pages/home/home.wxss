@@ -1,21 +1,15 @@
-.box_container {
+.box {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.box_container .box {
-  width: 200rpx;
-  height: 200rpx;
+  height: 600rpx;
   text-align: center;
-  line-height: 200rpx;
+  line-height: 600rpx;
 }
-.box_container .box:nth-child(1) {
+.box:nth-child(1) {
   background-color: lightgreen;
 }
-.box_container .box:nth-child(2) {
-  background-color: lightblue;
+.box:nth-child(2) {
+  background-color: lightpink;
 }
-.box_container .box:nth-child(3) {
-  background-color: lightcoral;
+.box:nth-child(3) {
+  background-color: lightblue;
 }
