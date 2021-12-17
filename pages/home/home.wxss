@@ -1,0 +1,21 @@
+.box_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box_container .box {
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.box_container .box:nth-child(1) {
+  background-color: lightgreen;
+}
+.box_container .box:nth-child(2) {
+  background-color: lightblue;
+}
+.box_container .box:nth-child(3) {
+  background-color: lightcoral;
+}

@@ -1,2 +1,7 @@
-<view>
+<view class="full flex">
+  <view class="box_container">
+    <view class="box">A</view>
+    <view class="box">B</view>
+    <view class="box">C</view>
+  </view>
 </view>
