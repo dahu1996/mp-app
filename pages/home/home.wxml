@@ -25,7 +25,8 @@
     </block>
     <view hidden="{{flag}}">条件为true的时候隐藏</view>
   </view>
-  <view>
+  <view style="width: 100%; height: 100vh;">
     <!-- 列表渲染 -->
+    
   </view>
 </view>

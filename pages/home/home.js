@@ -15,5 +15,15 @@ Page({
     this.setData({
       count: event.detail.value
     });
+  },
+  onPullDownRefresh() {
+    setTimeout(() => {
+      wx.stopPullDownRefresh({
+        success: (res) => {console.log(res)},
+      })
+    }, 1000);
+  },
+  onReachBottom() {
+    console.log('reach bottom');
   }
 })
