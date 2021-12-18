@@ -1,5 +1,31 @@
 <view class="full">
-  <button type="primary" size="mini">Button</button>
-  <button type="warn" size="mini">Button</button>
-  <button type="warn" size="mini" plain>Button</button>
+  <view>
+    <!-- wxml 数据绑定 -->
+    {{ value }}
+    <image src="{{img}}" />
+  </view>
+  <view>
+    <!-- 事件监听 -->
+    <view>
+      <!-- 点击事件 -->
+      {{count}}
+      <button type="primary" bindtap="clickMe">click me</button>
+    </view>
+    <view>
+      <!-- 输入事件 -->
+      <input value="{{count}}" bindinput="onInupt" />
+    </view>
+  </view>
+  <view>
+    <!-- 条件渲染 -->
+    <block wx:if="{{ count > 0 }}">
+      <view wx:if="{{ count === 1 }}">count = 1</view>
+      <view wx:elif ="{{ count === 2 }}">count = 2</view>
+      <view wx:else ="{{ count === 2 }}">count > 2</view>
+    </block>
+    <view hidden="{{flag}}">条件为true的时候隐藏</view>
+  </view>
+  <view>
+    <!-- 列表渲染 -->
+  </view>
 </view>
