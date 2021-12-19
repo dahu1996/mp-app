@@ -1,2 +1,3 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view class="full flex">
+  <button type="primary" bindtap="onRequest">wx.request</button>
+</view>
