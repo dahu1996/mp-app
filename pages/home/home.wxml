@@ -1,32 +1,17 @@
-<view class="full">
-  <view>
-    <!-- wxml 数据绑定 -->
-    {{ value }}
-    <image src="{{img}}" />
-  </view>
-  <view>
-    <!-- 事件监听 -->
-    <view>
-      <!-- 点击事件 -->
-      {{count}}
-      <button type="primary" bindtap="clickMe">click me</button>
-    </view>
-    <view>
-      <!-- 输入事件 -->
-      <input value="{{count}}" bindinput="onInupt" />
+<view class="full flex flex_col">
+  <swiper class="header-swiper" indicator-dots circular>
+    <swiper-item wx:for="{{ swiperList }}" wx:key="id">
+      <image src="{{item.image}}" />
+    </swiper-item>
+  </swiper>
+  <view class="category_list">
+    <view wx:for="{{ gridList }}" wx:key="id" class="category_item">
+      <image src="{{ item.icon }}" />
+      <text>{{item.name}}</text>
     </view>
   </view>
-  <view>
-    <!-- 条件渲染 -->
-    <block wx:if="{{ count > 0 }}">
-      <view wx:if="{{ count === 1 }}">count = 1</view>
-      <view wx:elif ="{{ count === 2 }}">count = 2</view>
-      <view wx:else ="{{ count === 2 }}">count > 2</view>
-    </block>
-    <view hidden="{{flag}}">条件为true的时候隐藏</view>
-  </view>
-  <view style="width: 100%; height: 100vh;">
-    <!-- 列表渲染 -->
-    
+  <view class="plate_box">
+    <image src="../../assets/link-01.png" mode="widthFix" />
+    <image src="../../assets/link-02.png" mode="widthFix" />
   </view>
 </view>
