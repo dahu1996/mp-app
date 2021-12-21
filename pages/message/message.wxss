@@ -1,0 +1,14 @@
+.color_box {
+  width: 85%;
+  height: 200rpx;
+  margin: 20rpx auto 0;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  line-height: 200rpx;
+  text-align: center;
+  color: #ffffff;
+}
+
+.color_box:nth-last-child(1) {
+  margin-bottom: 20rpx;
+}

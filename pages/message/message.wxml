@@ -1,2 +1,3 @@
-<view class="full flex">
+<view class="full flex flex_col">
+  <view wx:for="{{ colorList }}" wx:key="item" class="color_box" style="{{ 'background-color:rgb(' + item + ')' }}">{{ item }}</view>
 </view>

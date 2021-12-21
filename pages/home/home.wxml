@@ -14,4 +14,14 @@
     <image src="../../assets/link-01.png" mode="widthFix" />
     <image src="../../assets/link-02.png" mode="widthFix" />
   </view>
+  <view>
+    <!-- 声明是导航 -->
+    <navigator url="/pages/message/message?id=111" open-type="switchTab">
+      跳转tabbar页面
+    </navigator>
+    <!-- navigate属性可省略 -->
+    <navigator url="/pages/detail/detail?id=1" open-type="navigate">
+      跳转非tabbar页面
+    </navigator>
+  </view>
 </view>

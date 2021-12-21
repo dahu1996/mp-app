@@ -1,0 +1,8 @@
+<view class="full">
+  <navigator open-type="navigateBack">
+    Back
+  </navigator>
+  <navigator open-type="exit">
+    Exit
+  </navigator>
+</view>
