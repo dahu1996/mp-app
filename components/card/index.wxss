@@ -1,0 +1,8 @@
+.color-view {
+  width: 100vw;
+  height: 30vh;
+  text-align: center;
+  line-height: 30vh;
+  font-size: large;
+  color: #fff;
+}

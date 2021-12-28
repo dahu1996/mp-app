@@ -17,6 +17,12 @@
           "pathName": "pages/home/home",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/contact/contact",
+          "query": "",
+          "scene": null
         }
       ]
     }
