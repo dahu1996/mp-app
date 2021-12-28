@@ -5,23 +5,26 @@
     </swiper-item>
   </swiper>
   <view class="category_list">
-    <view wx:for="{{ gridList }}" wx:key="id" class="category_item">
+    <navigator wx:for="{{ gridList }}" wx:key="id"
+      class="category_item"
+      url="/pages/shoplist/shoplist?id={{ item.id }}&title={{item.name}}"
+    >
       <image src="{{ item.icon }}" />
       <text>{{item.name}}</text>
-    </view>
+    </navigator>
   </view>
   <view class="plate_box">
     <image src="../../assets/link-01.png" mode="widthFix" />
     <image src="../../assets/link-02.png" mode="widthFix" />
   </view>
-  <view>
+  <!-- <view> -->
     <!-- 声明是导航 -->
-    <navigator url="/pages/message/message?id=111" open-type="switchTab">
-      跳转tabbar页面
-    </navigator>
+    <!-- <navigator url="/pages/message/message?id=111" open-type="switchTab"> -->
+      <!-- 跳转tabbar页面 -->
+    <!-- </navigator> -->
     <!-- navigate属性可省略 -->
-    <navigator url="/pages/detail/detail?id=1" open-type="navigate">
-      跳转非tabbar页面
-    </navigator>
-  </view>
+    <!-- <navigator url="/pages/detail/detail?id=1" open-type="navigate"> -->
+      <!-- 跳转非tabbar页面 -->
+    <!-- </navigator> -->
+  <!-- </view> -->
 </view>

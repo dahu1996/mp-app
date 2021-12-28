@@ -1,0 +1,9 @@
+.shop_item {
+
+}
+
+.shop_item .tumb img {
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+}

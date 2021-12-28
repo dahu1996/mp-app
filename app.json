@@ -3,6 +3,7 @@
     "pages/home/home",
     "pages/message/message",
     "pages/contact/contact",
+    "pages/shoplist/shoplist",
     "pages/detail/detail"
   ],
   "window": {
