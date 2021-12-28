@@ -1,2 +1,4 @@
-<view class="full flex">
+<view class="full flex flex_col">
+  <van-button type="primary">Hello</van-button>
+  <the-crad />
 </view>

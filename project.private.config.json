@@ -19,8 +19,8 @@
           "scene": null
         },
         {
-          "name": "pages/message/message",
-          "pathName": "pages/message/message",
+          "name": "",
+          "pathName": "pages/contact/contact",
           "query": "",
           "scene": null
         }

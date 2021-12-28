@@ -1,0 +1,23 @@
+{
+  "name": "mp-app",
+  "version": "1.0.0",
+  "description": "wechat miniprogram",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahu1996/mp-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dahu1996/mp-app/issues"
+  },
+  "homepage": "https://github.com/dahu1996/mp-app#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.0"
+  }
+}

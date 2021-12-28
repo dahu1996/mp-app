@@ -1,0 +1,8 @@
+<view class="card">
+  <view class="color-view" style="background-color:{{ rgbStr }};">
+    {{ rgbStr }}
+  </view>
+  <button data-type="r" bindtap="addColor">R</button>
+  <button data-type="g" bindtap="addColor">G</button>
+  <button data-type="b" bindtap="addColor">B</button>
+</view>

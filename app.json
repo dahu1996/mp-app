@@ -32,5 +32,8 @@
       }
     ]
   },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
   "sitemapLocation": "sitemap.json"
 }
