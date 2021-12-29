@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dahu1996/mp-app#readme",
   "dependencies": {
-    "@vant/weapp": "^1.10.0"
+    "@vant/weapp": "^1.10.0",
+    "miniprogram-api-promise": "^1.0.1"
   }
 }
