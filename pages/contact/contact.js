@@ -1,66 +1,28 @@
-// pages/contact/contact.js
+/**
+ * 将Store绑定至页面中
+ * 
+ * 1. 引入相关依赖
+ * 2. onLoad生命周期中 - 绑定相关依赖
+ * 3. onUnload生命周期中 - 卸载相关依赖
+ */
+
+const { createStoreBindings } = require('mobx-miniprogram-bindings');
+
+const store = require('../../store/index');
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  onLoad() {
+    this.storeBindings = createStoreBindings(this, {
+      store,
+      fields: ['foo', 'bar'],
+      actions: ['updateFoo']
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onShow() {
+    this.updateFoo('baz');
+    console.log(this.data);
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onUnload() {
+    this.storeBindings.destroyStoreBindings();
   }
 })

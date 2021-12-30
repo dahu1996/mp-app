@@ -1,4 +1,4 @@
-import { promisifyAll } from 'miniprogram-api-promise';
+const { promisifyAll } = require('miniprogram-api-promise');
 
 wx.cloud.init();
 

@@ -1,9 +1,24 @@
+const { storeBindingsBehavior } = require('mobx-miniprogram-bindings');
+const store = require('../../store/index');
+
 const typeMap = {
   r: 0,
   g: 1,
   b: 2
 };
 Component({
+  behaviors: [ storeBindingsBehavior ],
+  storeBindings: {
+    store,
+    fields: { // 自定绑定字段
+      foo: () => store.foo,
+      bar: (store) => store.bar,
+      bar1: 'bar'
+    },
+    actions: {
+      updateFoo: 'updateFoo'
+    }
+  },
   options: {
     styleIsolation: 'apply-shared',
     // 纯数据字段（以下划线开头的字段）
@@ -29,10 +44,15 @@ Component({
     }
   },
   pageLifetimes: {
-
+    show() {
+      this.updateFoo('bbb');
+    },
+    hide() {},
+    resize() {}
   },
   lifetimes: {
     created() {
+      console.log(this.data);
       console.log('created');
     },
     attached() {
@@ -49,4 +69,4 @@ Component({
       this.setData({ _rgb: rgb });
     }
   }
-})
+});
