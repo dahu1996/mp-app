@@ -12,6 +12,7 @@
     "navigationBarTitleText": "本地生活"
   },
   "tabBar": {
+    "custom": true,
     "list": [
       {
         "pagePath": "pages/home/home",

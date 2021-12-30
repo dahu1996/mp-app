@@ -9,7 +9,7 @@
 
 <wxs module="tools2" src="../../utils/tools.wxs"></wxs>
 
-<view class="full flex flex_col">
+<view class="full flex flex_col" style="margin-bottom: 50px;">
   <view>{{ tools1.toUpper('wxs is good') }}</view>
   <view>{{ tools2.toLower('JS IS BAD') }}</view>
   <view wx:for="{{ colorList }}" wx:key="item" class="color_box" style="{{ 'background-color:rgb(' + item + ')' }}">{{ item }}</view>
